@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="">
-        <NavBar logo={logo} logoAlt="Logo Ecommerce" logoHref="#" link1="inicio" link2="nosotros" link3="productos" />
+        <NavBar logo={logo} logoAlt="Logo Ecommerce" logoHref="#" link1="Inicio" link2="Productos" link3="Nosotros" />
       </header>
     </div>
   );
