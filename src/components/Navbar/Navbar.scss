@@ -1,14 +1,15 @@
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(183, 159, 238);
+    width: 100%;
     &__container__logo{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20%;
-        max-width: 200px;
+        width: 15%;
+        max-width: 150px;
         &__img{
             width: calc(3vw + 3em);
         }
@@ -20,12 +21,12 @@
         justify-content: space-evenly;
         align-items: center;
         text-decoration: none;
-        width: 80%;
+        width: 60%;
         &__ul{
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
             text-decoration: none;
             width: 60%;
@@ -34,29 +35,28 @@
                 justify-content: center;
                 align-items: center;
                 width: 20%;
+                max-width: 150px;
+                font-weight: bold;
                 &:hover{
-                    font-weight: bold;
+                    a{
+                        color: black;
+                    }
                 }
                 &__a{
                     text-decoration: none;
                     text-align: center;
-                    color: black;
+                    color: aliceblue;
                 }
             }
         }
-        &__icon{
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            border-radius: 50%;
-            font-size: 30px;
-            color: black;
-            width: 35px;
-            height: 35px;
-            &:hover{
-                box-shadow: 2px 2px 20px rgb(117, 102, 153);
+    }
+}
+@media screen and (max-width: 991px){
+    .navbar{
+        &__container__link{
+            width: 70%;
+            &__ul{
+                width: 80%;
             }
         }
     }

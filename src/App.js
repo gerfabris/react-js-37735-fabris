@@ -1,13 +1,16 @@
 //import './App.css';
-import logo from '../src/assets/img/COHETE_NEGRO.png';
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import {NavBar} from "./components/Navbar/NavBar"
 
 function App() {
   return (
     <div className="App">
       <header className="">
-        <NavBar logo={logo} logoAlt="Logo Ecommerce" logoHref="#" link1="Inicio" link2="Productos" link3="Nosotros" />
+        <NavBar/>
       </header>
+      <main>
+        <ItemListContainer/>
+      </main>
     </div>
   );
 }

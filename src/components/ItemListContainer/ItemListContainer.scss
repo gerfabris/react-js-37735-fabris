@@ -1,0 +1,27 @@
+.sectionItemList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    &__containerTitle{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__title{
+            width: 60%;
+            color: black;
+            text-align: center;
+        }
+    }
+    &__containerCards{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

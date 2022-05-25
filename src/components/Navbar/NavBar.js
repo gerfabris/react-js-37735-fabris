@@ -1,15 +1,22 @@
-//mport { Nav } from "react-bootstrap"
+//import { Nav } from "react-bootstrap"
 //import Navbar from 'react-bootstrap/Navbar'
+import {imagenes} from '../assets/img/img';
 import './Navbar.scss'
-import {BsFillCartCheckFill} from "react-icons/bs"
+import { CartWidget } from '../CartWidget/CartWidget';
+const datosNavBar = {
+    logoHref: "#",
+    link1: "Inicio",
+    link2: "Productos",
+    link3: "Nosotros",
+}
 
-export const NavBar = ({logo,logoHref,logoAlt="Logo",link1="inicio", link2="productos", link3="nosotros"}) =>{
-    const icono = <BsFillCartCheckFill/>
+export const NavBar = () =>{
+    const {logoHref,link1, link2, link3} = datosNavBar
     return(
         <nav className="navbar">
             <div className="navbar__container__logo">
                 <a href={logoHref}>
-                    <img src={logo} alt={logoAlt} className="navbar__container__logo__img"/>
+                    <img src={imagenes[0].img} alt={imagenes[0].alt} className="navbar__container__logo__img"/>
                 </a>
             </div>
             <div className='navbar__container__link'>
@@ -24,8 +31,8 @@ export const NavBar = ({logo,logoHref,logoAlt="Logo",link1="inicio", link2="prod
                         <a href='#' className='navbar__container__link__ul__li__a'>{link3}</a>
                     </li>
                 </ul>
-                <a href='#' className='navbar__container__link__icon'>{icono}</a>
             </div>
+            <CartWidget/>
         </nav>
     )
 }
