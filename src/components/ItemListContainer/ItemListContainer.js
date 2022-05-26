@@ -2,12 +2,12 @@ import { Cards } from '../Cards/Cards'
 import './ItemListContainer.scss'
 
 
-export const ItemListContainer = () =>{
+export const ItemListContainer = ({greeting}) =>{
     return (
         <section className='sectionItemList'>
             <div className='sectionItemList__containerTitle'>
                 <h2 className='sectionItemList__containerTitle__title'>
-                    Item List Container
+                    {greeting}
                 </h2>
             </div>
             <div className='sectionItemList__containerCards'>
