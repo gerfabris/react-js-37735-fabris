@@ -1,0 +1,21 @@
+.card {
+  width: 16rem;
+  height: 20rem;
+  background-color: azure;
+  -webkit-box-shadow: 0 0 20px #b79fee;
+          box-shadow: 0 0 20px #b79fee;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  border-radius: 10pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Cards.css.map */
