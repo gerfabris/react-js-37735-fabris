@@ -1,0 +1,46 @@
+.container__itemCount{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    &__onAdd{
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 3pt;
+        padding: .5em;
+        background-color: #E0E0E0;
+        font-weight: bold;
+        &:hover{
+            background-color: #B8E701;
+        }
+    }
+}
+.itemCount{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    max-width: 200px;
+    min-width: 200px;
+    button{
+        height: 30px;
+        width: 30px;
+        margin-right: 1em;
+        margin-left: 1em;
+        border-radius: 3pt;
+        border: none;
+        background-color: #E0E0E0;
+        font-weight: bold;
+        &:hover{
+            background-color: #B8E701;
+        }
+    }
+    p{
+        margin-bottom: 0;
+    }
+}

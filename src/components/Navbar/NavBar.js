@@ -16,7 +16,7 @@ export const NavBar = () =>{
         <nav className="navbar">
             <div className="navbar__container__logo">
                 <a href={logoHref}>
-                    <img src={imagenes[0].img} alt={imagenes[0].alt} className="navbar__container__logo__img"/>
+                    <img src={imagenes[2].img} alt={imagenes[2].alt} className="navbar__container__logo__img"/>
                 </a>
             </div>
             <div className='navbar__container__link'>

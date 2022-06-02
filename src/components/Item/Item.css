@@ -1,4 +1,4 @@
-.card {
+.Item {
   width: 16rem;
   height: 20rem;
   background-color: azure;
@@ -18,4 +18,4 @@
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=Cards.css.map */
+/*# sourceMappingURL=Item.css.map */

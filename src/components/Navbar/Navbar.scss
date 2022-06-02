@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(183, 159, 238);
+    background-color: none;
     width: 100%;
     &__container__logo{
         display: flex;
@@ -39,13 +39,13 @@
                 font-weight: bold;
                 &:hover{
                     a{
-                        color: black;
+                        color: #B8E701;
                     }
                 }
                 &__a{
                     text-decoration: none;
                     text-align: center;
-                    color: aliceblue;
+                    color: #E0E0E0;
                 }
             }
         }
