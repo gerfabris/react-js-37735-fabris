@@ -120,7 +120,7 @@ export const productos = [
         pictureImg: "../assets/imgProductos/setMatero-3.jpg",
         description: "Un set de mate para iniciarse en este deporte, pack de productos fiables, diseñado para estudiantes",
         features: "Set de mate simil cuero, mate de plástico duro, recipientes para tus productos, termo de vidrio, bombilla",
-        category: "termos"
+        category: "set"
     },
     {
         id: 14,
