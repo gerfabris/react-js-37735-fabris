@@ -12,7 +12,7 @@
         align-items: center;
         &__title{
             width: 60%;
-            color: #E0E0E0;
+            color: #2A4536;
             text-align: center;
         }
     }
@@ -27,6 +27,32 @@
             margin-top: 5em;
             width: 100px;
             height: 100px;
+        }
+    }
+    &__categorys{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__category{
+            text-decoration: none;
+            color: #2A4536;
+            padding: 1em;
+            border: #2A4536 3px solid;
+            min-width: 150px;
+            text-align: center;
+            border-radius: 2pt;
+            transition: all 1s ease-in-out;
+            margin: .5em .5em .5em .5em;
+            &:hover{
+                border: #A89A7C 3px solid;
+                color: #A89A7C;
+                background-color: #2A4536;
+            }
         }
     }
 }

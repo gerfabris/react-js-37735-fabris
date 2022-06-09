@@ -1,3 +1,10 @@
+"MateAR" - Tienda Ecommerce
+Proyecto React - Coder House
+Autor: Germán Fabris
+
+MateAR será un ecommerce de venta de mates, termos, y sets materos. Su misión es brindarles de los elementos esenciales
+a la humanidad para que disfruten de un buen mate.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

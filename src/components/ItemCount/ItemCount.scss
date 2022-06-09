@@ -11,10 +11,11 @@
         border: none;
         border-radius: 3pt;
         padding: .5em;
-        background-color: #E0E0E0;
+        background-color: none;
         font-weight: bold;
         &:hover{
-            background-color: #B8E701;
+            background-color: #2A4536;
+            color: #ffffff;
         }
     }
 }
@@ -34,10 +35,11 @@
         margin-left: 1em;
         border-radius: 3pt;
         border: none;
-        background-color: #E0E0E0;
+        background-color: none;
         font-weight: bold;
         &:hover{
-            background-color: #B8E701;
+            background-color: #2A4536;
+            color: #ffffff;
         }
     }
     p{

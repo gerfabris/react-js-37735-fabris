@@ -1,0 +1,33 @@
+.sectionNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &__title{
+        width: 80%;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 2em;
+    }
+    &__containerParagraph{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        box-shadow: 0 0 20px #2A4536;
+        padding: 2em;
+        border-radius: 10pt;
+        background-color: #e6d2a8;
+        &__paragraph{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

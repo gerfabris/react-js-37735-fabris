@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: none;
+    background: none;
     width: 100%;
     &__container__logo{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 15%;
+        width: 10%;
         max-width: 150px;
         &__img{
             width: calc(3vw + 3em);
@@ -29,7 +29,7 @@
             justify-content: space-between;
             align-items: center;
             text-decoration: none;
-            width: 60%;
+            width: 80%;
             &__li{
                 display: flex;
                 justify-content: center;
@@ -39,13 +39,31 @@
                 font-weight: bold;
                 &:hover{
                     a{
-                        color: #B8E701;
+                        color: #3F2D39;
                     }
                 }
                 &__a{
                     text-decoration: none;
                     text-align: center;
-                    color: #E0E0E0;
+                    color: #2A4536;
+                }
+            }
+            &__liCategorys{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 40%;
+                min-width: 200px;
+                &__category{
+                    text-decoration: none;
+                    text-align: center;
+                    color: #2A4536;
+                    &:hover{
+                        color: #3F2D39;
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -57,6 +75,31 @@
             width: 70%;
             &__ul{
                 width: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .navbar{
+        &__container__link{
+            &__ul{
+                width: 90%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .navbar{
+        &__container__link{
+            &__ul{
+                width: 80%;
+                justify-content: space-evenly;
+                &__li{
+                    margin-right: 1em;
+                }
+                &__liCategorys{
+                    display: none;
+                }
             }
         }
     }

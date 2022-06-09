@@ -1,21 +1,26 @@
-import './ItemDetailContainer.scss'
 import { useEffect, useState } from "react"
+import {useParams} from 'react-router-dom';
 import Spinner  from "react-bootstrap/Spinner"
 import { pedirProductos } from "../../components/mock/pedirProductos"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
+import './ItemDetailContainer.scss'
 
 export const ItemDetailContainer = ({greeting}) =>{
     
-    const [detail, setDetail] = useState([])
+    const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    const detailId = 3
+    const { itemId } = useParams()
+    console.log( itemId);
+    console.log(item);
 
     useEffect(() => {
         setLoading(true)
         pedirProductos()
             .then((resp) => {
-                setDetail( resp.find((detail) => detail.id === detailId) )
+                console.log(resp);
+                setItem(resp.find((item => item.id === Number(itemId))))
+                console.log(item);
             })
             .catch((error) => {
                 console.log('ERROR', error)
@@ -38,7 +43,7 @@ export const ItemDetailContainer = ({greeting}) =>{
                     ?   <Spinner animation="border" role="status" variant="primary" className='spinner'>
                             <span className="visually-hidden">Loading...</span>
                         </Spinner>
-                    :  <ItemDetail details={detail} />
+                    :  <ItemDetail item={item} />
                 }
             </div>
         </section>

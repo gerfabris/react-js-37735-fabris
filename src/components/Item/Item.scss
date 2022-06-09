@@ -1,12 +1,13 @@
 .item{
-    width: 16rem;
-    height: 20rem;
+    width: 20rem;
+    height: 35rem;
     background-color: none;
-    box-shadow: 0 0 20px #B8E701;
+    box-shadow: 0 0 20px #2A4536;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-right: 1em;
     border-radius: 10pt;
+    padding: 1em;
     //content
     display: flex;
     justify-content: space-evenly;
@@ -14,8 +15,28 @@
     flex-direction: column;
     overflow: hidden;
     img{
-        width: 5em;
-        height: 5em;
-        background-color: #E0E0E0;
+        width: 12em;
+        height: 12em;
+        background-color: #2A4536;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__price{
+        text-align: center;
+        font-weight: bold;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    &__btn{
+        background-color: #2A4536;
+        border: #2A4536 2px solid;
+        transition: .5s all ease-in-out;
+        &:hover{
+            background-color: #3B2A38;
+            border: #3B2A38 2px solid;
+        }
     }
 }
