@@ -4,6 +4,7 @@ import Spinner  from "react-bootstrap/Spinner"
 import { pedirProductos } from "../../components/mock/pedirProductos"
 import { ItemList } from "../ItemList/ItemList"
 import { useParams, Link } from 'react-router-dom';
+import { ItemFinish } from '../ItemFinish/ItemFinish'
 
 export const ItemListContainer = ({greeting}) =>{
     
@@ -11,9 +12,6 @@ export const ItemListContainer = ({greeting}) =>{
     const [loading, setLoading] = useState(true)
 
     const { categoryId } = useParams()
-    const params = useParams()
-    console.log(params);
-    console.log(categoryId);
 
     useEffect(() => {
         setLoading(true)
@@ -53,9 +51,10 @@ export const ItemListContainer = ({greeting}) =>{
                             <span className="visually-hidden">Loading...</span>
                         </Spinner>
 
-                    :  <ItemList items={items}/>
+                    :  <ItemList items={items}/> 
                 }
             </div>
+            <ItemFinish/>
         </section>
     )
 }

@@ -11,16 +11,12 @@ export const ItemDetailContainer = ({greeting}) =>{
     const [loading, setLoading] = useState(true)
 
     const { itemId } = useParams()
-    console.log( itemId);
-    console.log(item);
 
     useEffect(() => {
         setLoading(true)
         pedirProductos()
             .then((resp) => {
-                console.log(resp);
                 setItem(resp.find((item => item.id === Number(itemId))))
-                console.log(item);
             })
             .catch((error) => {
                 console.log('ERROR', error)

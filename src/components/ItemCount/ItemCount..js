@@ -1,28 +1,23 @@
 import { useState } from "react";
 import './ItemCount.scss'
 
-export const ItemCount = ({stock, initial, onAdd}) =>{
-    const [cantidad, setCantidad] = useState(Number(initial))
+export const ItemCount = ( {stock, setCounter, counter, onAdd} ) =>{
     
     const disminuir = () => {
-        cantidad > 0 ? setCantidad(cantidad - 1 ) : setCantidad(cantidad);
+        counter > 1 && setCounter(counter - 1)
     }
     const aumentar = () => {
-        cantidad < stock ? setCantidad(cantidad + 1 ) : setCantidad(cantidad);  
+        counter < stock && setCounter(counter + 1)
     }
-	const onAddHandler = () => {
-		cantidad > 0? onAdd() : console.log("No selecciono nada");
-		setCantidad(0);
-	}
     
     return(
         <div className="container__itemCount">
             <div className="itemCount">
                 <button onClick={disminuir}>-</button>
-                <p> {cantidad} </p>
+                <p> {counter} </p>
                 <button onClick={aumentar}>+</button>
             </div>
-            <button className="container__itemCount__onAdd" onClick={onAddHandler}>Añadir al carrito</button>
+            <button className="container__itemCount__onAdd" onClick={onAdd}>Añadir al carrito</button>
         </div>
     )
 }

@@ -10,24 +10,19 @@ import { Nosotros } from './components/Nosotros/Nosotros'
 
 function App() {
   return (
-
     <BrowserRouter>
-          
       <NavBar/>
-
       <Routes>
         <Route path='/' element={ <Inicio/> }/>
         <Route path='/Productos' element={ <ItemListContainer greeting="Nuestros productos"/>}/> 
         <Route path='/category/:categoryId' element={ <ItemListContainer greeting="Nuestros productos"/>}/>          
         <Route path='/item/:itemId' element={<ItemDetailContainer greeting="Detalles del producto"/>} />
         <Route path='/Nosotros' element={ <Nosotros/>}/> 
+        <Route path='/cart' element={<Inicio/>} /> 
         <Route path='*' element={ <Navigate to={"/"} /> } />
         {/* <Route path='*' element={ <Error404/> } /> */}
       </Routes>
-
-
     </BrowserRouter>
-
   );
 }
 
