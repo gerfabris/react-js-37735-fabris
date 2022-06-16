@@ -1,13 +1,14 @@
-.Item {
-  width: 16rem;
-  height: 20rem;
-  background-color: azure;
-  -webkit-box-shadow: 0 0 20px #b79fee;
-          box-shadow: 0 0 20px #b79fee;
+.item {
+  width: 20rem;
+  height: 35rem;
+  background-color: none;
+  -webkit-box-shadow: 0 0 20px #2A4536;
+          box-shadow: 0 0 20px #2A4536;
   margin-top: 2em;
   margin-bottom: 2em;
   margin-right: 1em;
   border-radius: 10pt;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,5 +18,41 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.item img {
+  width: 12em;
+  height: 12em;
+  background-color: #2A4536;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.item__title {
+  text-align: center;
+}
+
+.item__price {
+  text-align: center;
+  font-weight: bold;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.item__btn {
+  background-color: #2A4536;
+  border: #2A4536 2px solid;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+.item__btn:hover {
+  background-color: #3B2A38;
+  border: #3B2A38 2px solid;
 }
 /*# sourceMappingURL=Item.css.map */

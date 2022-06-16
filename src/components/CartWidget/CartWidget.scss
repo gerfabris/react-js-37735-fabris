@@ -6,6 +6,7 @@
     height: 50px;
     border-radius: 10pt;
     box-shadow: 2px 2px 20px #2A4536;
+    text-decoration: none;
     &__cartWidget{
         text-decoration: none;
         display: flex;
@@ -22,5 +23,13 @@
         .containerCartWidget__cartWidget{
             color: #3F2D39;
         }
+    }
+    &__span{
+        color: #2A4536;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+        width: 8px;
     }
 }

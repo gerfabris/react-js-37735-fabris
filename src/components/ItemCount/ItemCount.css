@@ -1,0 +1,80 @@
+.container__itemCount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__itemCount__onAdd {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 3pt;
+  padding: .5em;
+  background-color: none;
+  font-weight: bold;
+}
+
+.container__itemCount__onAdd:hover {
+  background-color: #2A4536;
+  color: #ffffff;
+}
+
+.itemCount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.itemCount button {
+  height: 30px;
+  width: 30px;
+  margin-right: 1em;
+  margin-left: 1em;
+  border-radius: 3pt;
+  border: none;
+  background-color: none;
+  font-weight: bold;
+}
+
+.itemCount button:hover {
+  background-color: #2A4536;
+  color: #ffffff;
+}
+
+.itemCount p {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=ItemCount.css.map */

@@ -1,0 +1,100 @@
+.inicio {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-image: url("./fondo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.inicio__containerTitle {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  margin-top: 5em;
+}
+
+.inicio__containerTitle h1 {
+  color: #2A4536;
+  font-weight: bold;
+}
+
+.inicio__contenedorLinks {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.inicio__contenedorLinks__li {
+  list-style: none;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 150px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.inicio__contenedorLinks__li__link {
+  color: #2A4536;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 2pt;
+  border: #2A4536 3px solid;
+  padding: .5em;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.inicio__contenedorLinks__li__link:hover {
+  border: #3B2A38 3px solid;
+  color: #3B2A38;
+  background-color: #A89A7C;
+}
+
+@media screen and (max-width: 600px) {
+  .inicio__contenedorLinks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=Inicio.css.map */

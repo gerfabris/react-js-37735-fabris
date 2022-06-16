@@ -1,4 +1,4 @@
-.sectionItemList {
+.sectionItemDetailContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,9 +14,10 @@
           flex-direction: column;
   width: 100%;
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-.sectionItemList__containerTitle {
+.sectionItemDetailContainer__containerTitle {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,15 +28,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2em;
 }
 
-.sectionItemList__containerTitle__title {
-  width: 60%;
+.sectionItemDetailContainer__containerTitle__title {
+  width: 100%;
   color: #2A4536;
   text-align: center;
+  font-weight: bold;
 }
 
-.sectionItemList__containerItem {
+.sectionItemDetailContainer__containerDetail {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -53,49 +56,9 @@
           flex-direction: column;
 }
 
-.sectionItemList__containerItem .spinner {
+.sectionItemDetailContainer__containerDetail .spinner {
   margin-top: 5em;
   width: 100px;
   height: 100px;
 }
-
-.sectionItemList__categorys {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 70%;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.sectionItemList__categorys__category {
-  text-decoration: none;
-  color: #2A4536;
-  padding: 1em;
-  border: #2A4536 3px solid;
-  min-width: 150px;
-  text-align: center;
-  border-radius: 2pt;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  margin: .5em .5em .5em .5em;
-}
-
-.sectionItemList__categorys__category:hover {
-  border: #A89A7C 3px solid;
-  color: #A89A7C;
-  background-color: #2A4536;
-}
-/*# sourceMappingURL=ItemListContainer.css.map */
+/*# sourceMappingURL=ItemDetailContainer.css.map */

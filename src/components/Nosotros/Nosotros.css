@@ -1,0 +1,62 @@
+.sectionNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.sectionNosotros__title {
+  width: 80%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.sectionNosotros__containerParagraph {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  -webkit-box-shadow: 0 0 20px #2A4536;
+          box-shadow: 0 0 20px #2A4536;
+  padding: 2em;
+  border-radius: 10pt;
+  background-color: #e6d2a8;
+}
+
+.sectionNosotros__containerParagraph__paragraph {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=Nosotros.css.map */

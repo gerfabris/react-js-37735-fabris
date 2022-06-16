@@ -1,0 +1,99 @@
+.itemDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  -webkit-box-shadow: 0 0 20px #2A4536;
+          box-shadow: 0 0 20px #2A4536;
+  border-radius: 10pt;
+  padding: 2em;
+}
+
+.itemDetail__containerRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.itemDetail__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45%;
+  margin-right: 2em;
+  padding: 1em;
+}
+
+.itemDetail__img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+.itemDetail__price {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.itemDetail__description {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.itemDetail__features {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.itemDetail__title {
+  font-weight: bold;
+}
+
+.itemDetail__btn {
+  background-color: #2A4536;
+  border: #2A4536 2px solid;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+.itemDetail__btn:hover {
+  background-color: #3B2A38;
+  border: #3B2A38 2px solid;
+}
+/*# sourceMappingURL=ItemDetail.css.map */

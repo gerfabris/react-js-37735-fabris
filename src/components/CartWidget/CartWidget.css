@@ -11,8 +11,9 @@
   width: 60px;
   height: 50px;
   border-radius: 10pt;
-  -webkit-box-shadow: 2px 2px 20px #756699;
-          box-shadow: 2px 2px 20px #756699;
+  -webkit-box-shadow: 2px 2px 20px #2A4536;
+          box-shadow: 2px 2px 20px #2A4536;
+  text-decoration: none;
 }
 
 .containerCartWidget__cartWidget {
@@ -27,7 +28,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 30px;
-  color: black;
+  color: #2A4536;
   width: 30px;
   height: 30px;
   -webkit-transition: all .5s ease-in-out;
@@ -35,11 +36,26 @@
 }
 
 .containerCartWidget:hover {
-  -webkit-box-shadow: 3.5px 3.5px 20px #756699;
-          box-shadow: 3.5px 3.5px 20px #756699;
+  -webkit-box-shadow: 3.5px 3.5px 20px #3F2D39;
+          box-shadow: 3.5px 3.5px 20px #3F2D39;
 }
 
 .containerCartWidget:hover .containerCartWidget__cartWidget {
-  color: aliceblue;
+  color: #3F2D39;
+}
+
+.containerCartWidget__span {
+  color: #2A4536;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  width: 8px;
 }
 /*# sourceMappingURL=CartWidget.css.map */

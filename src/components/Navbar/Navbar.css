@@ -8,7 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #b79fee;
+  background: none;
   width: 100%;
 }
 
@@ -22,7 +22,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 15%;
+  width: 10%;
   max-width: 150px;
 }
 
@@ -67,7 +67,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  width: 60%;
+  width: 80%;
 }
 
 .navbar__container__link__ul__li {
@@ -86,13 +86,44 @@
 }
 
 .navbar__container__link__ul__li:hover a {
-  color: black;
+  color: #3F2D39;
 }
 
 .navbar__container__link__ul__li__a {
   text-decoration: none;
   text-align: center;
-  color: aliceblue;
+  color: #2A4536;
+}
+
+.navbar__container__link__ul__liCategorys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  min-width: 200px;
+}
+
+.navbar__container__link__ul__liCategorys__category {
+  text-decoration: none;
+  text-align: center;
+  color: #2A4536;
+}
+
+.navbar__container__link__ul__liCategorys__category:hover {
+  color: #3F2D39;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
@@ -101,6 +132,27 @@
   }
   .navbar__container__link__ul {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar__container__link__ul {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__container__link__ul {
+    width: 80%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .navbar__container__link__ul__li {
+    margin-right: 1em;
+  }
+  .navbar__container__link__ul__liCategorys {
+    display: none;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */
