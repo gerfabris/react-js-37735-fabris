@@ -24,12 +24,15 @@
             color: #3F2D39;
         }
     }
-    &__span{
-        color: #2A4536;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        height: 100%;
-        width: 8px;
-    }
+}
+.containerCartWidget__span{
+    color: #2A4536;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: 8px;
+}
+.containerCartWidget__span-disable{
+    display: none;
 }

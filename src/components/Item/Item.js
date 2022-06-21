@@ -7,7 +7,7 @@ import './Item.scss'
 
 export const Item = ({item}) =>{
     const {addItem, isInCart} = useCartContext()
-    const [cantidad, setCantidad] = useState(1)
+    const [cantidad, setCantidad] = useState(0)
 
     const handleOnAdd = () => {
         const itemToCart = {

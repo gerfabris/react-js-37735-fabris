@@ -1,6 +1,7 @@
 import { useCartContext } from "../../context/CartContext"
 import { BsFillTrashFill } from "react-icons/bs"
 import { useNavigate } from 'react-router-dom';
+import { EmptyCart } from "./EmptyCart";
 import './Cart.scss'
 
 export const Cart = () => {
@@ -12,6 +13,8 @@ export const Cart = () => {
         navigate(-1)
     }
 
+    if (cart.length === 0) return <EmptyCart/>
+    
     return (
         <section className="containerCart">
             <h3 className="containerCart__title">Aquí tu compra, ¿no quieres llevar más? Piénsalo 😉</h3>
