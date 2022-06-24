@@ -36,7 +36,7 @@ export const productos = [
         price: 1500,
         pictureImg: "../assets/imgProductos/mate-4.jpg",
         description: "Un mate ideal para regalar y regalarte",
-        features: "Mate hecho a mano en cerámica, virola de acero inoxidable con vaso interior en una pieza ",
+        features: ".",
         category: "mates",
         stock: 14
     },
@@ -45,8 +45,8 @@ export const productos = [
         title: "Mate - Esculpido",
         price: 4500,
         pictureImg: "../assets/imgProductos/mate-5.jpg",
-        description: "Un mate con diseño de editor, para disfrutar no sólo de un buen mate, sino de una linda vista",
-        features: "Mate forrado en cuero de vaca grueso, teñido y lustrado, con detalles de diseño exclusivos",
+        description: "Un mate con diseño de editor, para disfrutar no sólo de un buen mate, sino de una linda vista.",
+        features: "Mate forrado en cuero de vaca grueso, teñido y lustrado, con detalles de diseño exclusivos.",
         category: "mates",
         stock: 13
     },
@@ -146,7 +146,7 @@ export const productos = [
         title: "Set Matero - Esculpido",
         price: 8000,
         pictureImg: "../assets/imgProductos/setMatero-5.jpg",
-        description: "Un set matero ideal para tus fotos de Instagram, disño único",
+        description: "Un set matero ideal para tus fotos de Instagram, diseño único",
         features: "Set de mate de alpahaca y cuero, con detalles de diseño único, mate, recipientes para tus productos, termo acero inoxidable, bombilla de acero",
         category: "set",
         stock: 12

@@ -3,6 +3,8 @@ import {useParams} from 'react-router-dom';
 import Spinner  from "react-bootstrap/Spinner"
 import { pedirProductos } from "../../components/mock/pedirProductos"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../firebase/config"
 import './ItemDetailContainer.scss'
 
 export const ItemDetailContainer = ({greeting}) =>{
@@ -14,18 +16,16 @@ export const ItemDetailContainer = ({greeting}) =>{
 
     useEffect(() => {
         setLoading(true)
-        pedirProductos()
-            .then((resp) => {
-                setItem(resp.find((item => item.id === Number(itemId))))
-            })
-            .catch((error) => {
-                console.log('ERROR', error)
+        const docRef = doc(db, "productos", itemId)
+        getDoc(docRef)
+            .then((doc) => {
+                setItem( {id: doc.id, ...doc.data()} )
             })
             .finally(() => {
                 setLoading(false)
             })
     }, [])
-    
+
     return (
         <section className='sectionItemDetailContainer'>
             <div className='sectionItemDetailContainer__containerTitle'>
@@ -45,3 +45,16 @@ export const ItemDetailContainer = ({greeting}) =>{
         </section>
     )
 }
+/* useEffect(() => {
+    setLoading(true)
+    pedirProductos()
+        .then((resp) => {
+            setItem(resp.find((item => item.id === Number(itemId))))
+        })
+        .catch((error) => {
+            console.log('ERROR', error)
+        })
+        .finally(() => {
+            setLoading(false)
+        })
+}, []) */

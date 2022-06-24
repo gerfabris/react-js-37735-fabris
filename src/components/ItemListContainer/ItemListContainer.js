@@ -5,6 +5,8 @@ import { pedirProductos } from "../../components/mock/pedirProductos"
 import { ItemList } from "../ItemList/ItemList"
 import { useParams, Link } from 'react-router-dom';
 import { ItemFinish } from '../ItemFinish/ItemFinish'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../firebase/config'
 
 export const ItemListContainer = ({greeting}) =>{
     
@@ -15,13 +17,19 @@ export const ItemListContainer = ({greeting}) =>{
 
     useEffect(() => {
         setLoading(true)
-        pedirProductos()
-            .then((resp) => {
-                if (!categoryId) {
-                    setItems( resp )
-                } else {
-                    setItems( resp.filter((item) => item.category === categoryId) )
-                }
+        
+        const productosRef = collection(db, "productos" )
+        const q = categoryId ? query(productosRef, where("category", "==", categoryId)) : productosRef
+
+        getDocs(q)
+            .then((resp) =>{
+                const newItems = resp.docs.map((doc) => {
+                    return { 
+                        id: doc.id,
+                        ...doc.data()
+                    }
+                })               
+                setItems( newItems)
             })
             .catch((error) => {
                 console.log('ERROR', error)
@@ -29,7 +37,9 @@ export const ItemListContainer = ({greeting}) =>{
             .finally(() => {
                 setLoading(false)
             })
+
     }, [categoryId])
+
     
     return (
         <section className='sectionItemList'>
@@ -58,3 +68,21 @@ export const ItemListContainer = ({greeting}) =>{
         </section>
     )
 }
+
+/*     useEffect(() => {
+        setLoading(true)
+        pedirProductos()
+            .then((resp) => {
+                if (!categoryId) {
+                    setItems( resp )
+                } else {
+                    setItems( resp.filter((item) => item.category === categoryId) )
+                }
+            })
+            .catch((error) => {
+                console.log('ERROR', error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [categoryId]) */
