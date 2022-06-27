@@ -4,6 +4,7 @@ import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer'
 import { Inicio } from '../Inicio/Inicio';
 import { Nosotros } from '../Nosotros/Nosotros'
 import { Cart } from '../Cart/Cart';
+import { Checkout } from '../Checkout/Checkout';
 
 
 export const HandleRoutes = () =>{
@@ -15,6 +16,7 @@ export const HandleRoutes = () =>{
             <Route path='/item/:itemId' element={<ItemDetailContainer greeting="Detalles del producto"/>} />
             <Route path='/Nosotros' element={ <Nosotros/>}/> 
             <Route path='/cart' element={<Cart/>} />
+            <Route path='/checkout' element={<Checkout/>} />
             <Route path='*' element={ <Navigate to={"/"} /> } />
             {/* <Route path='*' element={ <Error404/> } /> */}
         </Routes>

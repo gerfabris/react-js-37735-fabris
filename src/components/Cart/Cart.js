@@ -1,6 +1,6 @@
 import { useCartContext } from "../../context/CartContext"
 import { BsFillTrashFill } from "react-icons/bs"
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { EmptyCart } from "./EmptyCart";
 import './Cart.scss'
 
@@ -31,6 +31,7 @@ export const Cart = () => {
                 }
             </div>
             <p className="containerCart__total">TOTAL: ${totalPrice()}</p>
+            <Link to="/checkout" className="btn containerCart__btnTrash">Terminar mi compra</Link>
             <button onClick={emptyCart} className="btn containerCart__btnTrash">Vaciar carrito</button>
             <button onClick={handleVolver} className='btn btn-primary my-2 itemDetail__btn'>Volver atrás</button>
         </section>
