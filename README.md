@@ -2,8 +2,24 @@
 Proyecto React - Coder House
 Autor: Germán Fabris
 
-MateAR será un ecommerce de venta de mates, termos, y sets materos. Su misión es brindarles de los elementos esenciales
-a la humanidad para que disfruten de un buen mate.
+PROYECTO ECOMMERS CODER HOUSE CON REACT JS
+
+MateAR recrea un ecommerce de venta de mates, termos, y sets materos. Su misión es brindarles de los elementos esenciales
+a la humanidad para que disfruten de un buen mate, elemento clave para la existencia del mismo.
+
+En el proyecto, se intenta recrear una aplicación ecommers utilizando React JS, donde se busca recrear lo aprendido durante el curso de CoderHouse - React JS.
+El ecommers busca ofrecerle a esta empresa simulada una plataforma dinámica donde pueda ofrecer y vender sus productos.
+
+FUNCIONES DEL PROYECTO
+Al iniciar se visualiza una vista simple para acceso y navegabilidad del usuario, donde no se obliga al registro sino hasta la efectiva intención de compra, pudiendo acceder a la vista de productos de forma muy simple así como también navegar por las distintas secciones.
+Luego, el usuario puede acceder y seleccionar los productos a comprar tanto desde la vista general de productos, como de la vista detallada del mismo, añadiéndose los productos al carrito de compras.
+Otras funcionalidades añadidas son la posibilidad de eliminar productos del carrito, vaciar el carrito, y progresar en su compra hasta la generación de una orden, donde se le devuelve al usuario los productos adquiridos, como un ID de orden.
+
+TECNOLOGÍAS UTILIZADAS
+React JS, JSX.
+CSS, Bootsrap y SCSS para los estilos del proyecto.
+Formik & YUP para formularios y validaciones.
+Firebase para la base de datos de los productos y de las ordenes de compra-
 
 # Getting Started with Create React App
 

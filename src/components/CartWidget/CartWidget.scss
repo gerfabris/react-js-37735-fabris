@@ -1,38 +1,43 @@
+@import '../styles/variables';
+
 .containerCartWidget{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 50px;
+    @include flex-center;
+    width: 55px;
+    height: 45px;
     border-radius: 10pt;
-    box-shadow: 2px 2px 20px #2A4536;
+    box-shadow: 2px 2px 20px $color-secundario;
+    transition: all .5s ease-in-out;
     text-decoration: none;
     &__cartWidget{
+        @include flex-center;
         text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        color: #2A4536;
-        width: 30px;
-        height: 30px;
-        transition: all .5s ease-in-out;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+        color: #ffffff;
     }
     &:hover{
-        box-shadow: 3.5px 3.5px 20px #3F2D39;
+        box-shadow: 3.5px 3.5px 20px #ffffff;
         .containerCartWidget__cartWidget{
-            color: #3F2D39;
+            color: #ffffff;
         }
     }
 }
 .containerCartWidget__span{
-    color: #2A4536;
+    color: #ffffff;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     height: 100%;
-    width: 8px;
+    width: 6px;
+    margin-left: .2em;
 }
 .containerCartWidget__span-disable{
     display: none;
+}
+
+@media screen and (max-width:990px) {
+    .containerCartWidget{
+        margin-top: 1em;
+    }    
 }

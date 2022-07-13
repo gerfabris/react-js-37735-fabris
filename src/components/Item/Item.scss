@@ -1,25 +1,22 @@
+@import '../styles/variables';
+
 .item{
+    @include box-shadow-10pt;
+    @include margin__Espaciado(2em,2em);
     width: 20rem;
     height: 35rem;
-    background-color: none;
-    box-shadow: 0 0 20px #2A4536;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-right: 1em;
-    border-radius: 10pt;
     padding: 1em;
+    margin-right: 1em;
+    background-color: none;
     //content
-    display: flex;
+    @include flex-column-center;
     justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
     overflow: hidden;
     img{
         width: 12em;
         height: 12em;
-        background-color: #2A4536;
-        margin-top: .5em;
-        margin-bottom: .5em;
+        background-color: $color-principal;
+        @include margin__Espaciado(.5em,.5em);
     }
     &__title{
         text-align: center;
@@ -27,16 +24,15 @@
     &__price{
         text-align: center;
         font-weight: bold;
-        margin-top: .5em;
-        margin-bottom: .5em;
+        @include margin__Espaciado(.5em,.5em);
     }
     &__btn{
-        background-color: #2A4536;
-        border: #2A4536 2px solid;
+        background-color: $color-principal;
+        border: $color-principal 2px solid;
         transition: .5s all ease-in-out;
         &:hover{
-            background-color: #3B2A38;
-            border: #3B2A38 2px solid;
+            background-color: $color-hover;
+            border: $color-hover 2px solid;
         }
     }
 }

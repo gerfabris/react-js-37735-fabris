@@ -1,0 +1,48 @@
+@import '../styles/variables';
+
+.navbar{
+    background-color: $color-principal;
+}
+.navbar__span{
+    color: $color-celeste;
+}
+.navbar__img{
+    max-width: 30px;
+    width: calc(3vw + 3em);
+    margin-right: .5em;
+}
+.navbar__items{
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dropdown-menu{
+    background-color: $color-principal;
+
+}
+.dropdown-item{
+    color: #ffffff;
+    text-align: center;
+    &:hover{
+        background-color: $color-secundario;
+    }
+}
+.dropdown-toggle{
+    text-align: center;
+}
+.navbar__link-active{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media screen and (max-width:990px) {
+    .navbar__items{
+        width: 100%;
+    }    
+    .navbar__collapse{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}

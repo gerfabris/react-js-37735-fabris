@@ -8,7 +8,6 @@ import './ItemDetail.scss'
 export const ItemDetail = ( {item} ) => {
     
     const {addItem, isInCart} = useCartContext()
-
     const [cantidad, setCantidad] = useState(1)
 
     const navigate = useNavigate()
@@ -23,7 +22,6 @@ export const ItemDetail = ( {item} ) => {
         }
         addItem(itemToCart)
     }
-
 
     return (
         <div className='itemDetail'>

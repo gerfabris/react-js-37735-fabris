@@ -1,32 +1,37 @@
+@import '../styles/variables';
+
 .sectionNosotros{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
     width: 100%;
     &__title{
-        width: 80%;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 2em;
+        @include center-bold;
+        @include flex-center;
+        margin-top: 1em;
+        color: $color-principal;
+        span{
+            color: $color-celeste;
+        }
+        &__img{
+            max-width: 30px;
+            width: calc(3vw + 3em);
+            margin-right: .5em;
+        }
+    }
+    &__subtitle{
+        @include center-bold;
+        margin-top: 1em;
     }
     &__containerParagraph{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        box-shadow: 0 0 20px #2A4536;
+        width: 90%;
+        max-width: 750px;
+        @include flex-column-center;
+        @include box-shadow-10pt;
+        @include margin__Espaciado(2em,2em);
         padding: 2em;
-        border-radius: 10pt;
-        background-color: #e6d2a8;
+        background-color: #ffeec8;
         &__paragraph{
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             text-align: center;
         }
     }

@@ -1,4 +1,4 @@
-import {Navigate, Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Inicio.scss'
 
 const datosNavBar = {

@@ -1,45 +1,13 @@
-import './ItemListContainer.scss'
-import { useEffect, useState } from "react"
+import { Link } from 'react-router-dom';
 import Spinner  from "react-bootstrap/Spinner"
-import { pedirProductos } from "../../components/mock/pedirProductos"
-import { ItemList } from "../ItemList/ItemList"
-import { useParams, Link } from 'react-router-dom';
 import { ItemFinish } from '../ItemFinish/ItemFinish'
-import { collection, getDocs, query, where } from 'firebase/firestore'
-import { db } from '../firebase/config'
+import { ItemList } from "../ItemList/ItemList"
+import { useProductos } from './useProductos'
+import './ItemListContainer.scss'
 
 export const ItemListContainer = ({greeting}) =>{
     
-    const [items, setItems] = useState([])
-    const [loading, setLoading] = useState(true)
-
-    const { categoryId } = useParams()
-
-    useEffect(() => {
-        setLoading(true)
-        
-        const productosRef = collection(db, "productos" )
-        const q = categoryId ? query(productosRef, where("category", "==", categoryId)) : productosRef
-
-        getDocs(q)
-            .then((resp) =>{
-                const newItems = resp.docs.map((doc) => {
-                    return { 
-                        id: doc.id,
-                        ...doc.data()
-                    }
-                })               
-                setItems( newItems)
-            })
-            .catch((error) => {
-                console.log('ERROR', error)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
-
-    }, [categoryId])
-
+    const {items, loading} = useProductos()
     
     return (
         <section className='sectionItemList'>
@@ -69,20 +37,3 @@ export const ItemListContainer = ({greeting}) =>{
     )
 }
 
-/*     useEffect(() => {
-        setLoading(true)
-        pedirProductos()
-            .then((resp) => {
-                if (!categoryId) {
-                    setItems( resp )
-                } else {
-                    setItems( resp.filter((item) => item.category === categoryId) )
-                }
-            })
-            .catch((error) => {
-                console.log('ERROR', error)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
-    }, [categoryId]) */

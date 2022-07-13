@@ -1,0 +1,31 @@
+@import '../styles/variables';
+
+.container__checkout{
+    @include flex-column-center;
+    width: 100%;
+    max-width: 700px;
+}
+.checkout__formulario{
+    width: 100%;
+    @include flex-column-center;
+    @include box-shadow-10pt;
+    padding: 1.5em;
+    @include margin__Espaciado(2em,1em);
+    input{
+        max-width: 500px;
+    }
+    label{
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 500px;
+    }
+    button{
+        @include btn-principalHover;
+    }
+}
+.checkout__btn{
+    @include btn-secundarioHover;
+    max-width: 250px;
+    width: 200px;
+}

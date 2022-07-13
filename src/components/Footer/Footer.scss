@@ -1,0 +1,46 @@
+@import '../styles/variables';
+
+footer{
+    background-color: $color-principal;
+    color: $color-background;
+    a{
+        text-decoration: none;
+        color: $color-background;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    hr{
+        color: $color-background;
+    }
+}
+
+.footer__container{
+    @include flex-row-wrap-center
+}
+.footer__container__logo{
+    @include flex-center;
+    width: 10%;
+    max-width: 150px;
+    &__img{
+        width: calc(3vw + 3em);
+        max-width: 50px;
+        margin-right: .5em;
+    }
+    @include center-bold;
+    @include flex-center;
+    margin-top: 1em;
+    color: $color-background;
+    text-decoration: none;
+    span{
+        color: $color-celeste;
+    }
+}
+.socialMedia{
+    @include flex-column-center;
+    font-size: 25px;
+    margin-bottom: .2em;
+}
+.footer__icons{
+    margin-right: .5em;
+}

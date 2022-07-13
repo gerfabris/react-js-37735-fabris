@@ -1,0 +1,82 @@
+$color-principal: #2A4536;
+$color-secundario: #A89A7C;
+$color-background: #e6d2a8;
+$color-hover: #3B2A38;
+$color-shadow: #3F2D39;
+$color-celeste: #1860a8;
+@mixin margin__Espaciado($ma-t, $ma-b){
+    margin-top: $ma-t;
+    margin-bottom: $ma-b;
+};
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row-wrap-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin btn-secundarioHover {
+    width: 150px;
+    min-width: 150px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: $color-principal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2pt;
+    border: $color-principal 3px solid;
+    padding: .5em;
+    transition: all .5s ease-in-out;
+    &:hover{
+        border: $color-secundario   3px solid;
+        color: $color-secundario;
+        background-color: $color-hover;
+    }
+}
+@mixin btn-principalHover {
+    background-color: $color-principal;
+    border: $color-principal 2px solid;
+    transition: .5s all ease-in-out;
+    &:hover{
+        background-color: $color-hover;
+        border: $color-hover 2px solid;
+    }
+}
+@mixin btn-nonePrincipal {
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius: 3pt;
+    border: none;
+    background-color: none;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    &:hover{
+        background-color: $color-principal;
+        color: #ffffff;
+    }
+}
+@mixin box-shadow {
+    box-shadow: 3.5px 3.5px 20px $color-shadow;
+    border-radius: 5pt;
+}
+@mixin box-shadow-10pt {
+    box-shadow: 0 0 10px $color-principal;
+    border-radius: 10pt;
+}
+@mixin center-bold {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}

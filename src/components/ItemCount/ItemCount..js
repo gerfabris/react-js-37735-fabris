@@ -1,4 +1,3 @@
-import { useState } from "react";
 import './ItemCount.scss'
 
 export const ItemCount = ( {stock, setCounter, counter, onAdd} ) =>{
@@ -11,7 +10,6 @@ export const ItemCount = ( {stock, setCounter, counter, onAdd} ) =>{
     }
     const btnRestarConfig = {
         onClick: disminuir,
-        //className: `btn mx-1 ${counter === 0 ? "btn-outline-danger" : "btn-outline-primary"} ${counter === 1 ? "min-value" : ''}`,
         disabled: counter === 0
     }
 
@@ -21,7 +19,6 @@ export const ItemCount = ( {stock, setCounter, counter, onAdd} ) =>{
                 <button {...btnRestarConfig}>-</button>
                 <p> {counter} </p>
                 <button
-                    //className={counter === stock ? "btn mx-1 btn-danger" : "btn mx-1 btn-primary"}
                     disabled={counter === stock}
                     onClick={aumentar}
                 >
