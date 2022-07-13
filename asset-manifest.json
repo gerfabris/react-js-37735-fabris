@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gerfabris/react-js-37735-fabris/static/css/main.1fb11736.css",
+    "main.js": "/gerfabris/react-js-37735-fabris/static/js/main.d9cab8e1.js",
+    "static/js/787.b978bd17.chunk.js": "/gerfabris/react-js-37735-fabris/static/js/787.b978bd17.chunk.js",
+    "static/media/fondo.jpg": "/gerfabris/react-js-37735-fabris/static/media/fondo.b3a4a48cadc7a9384f87.jpg",
+    "index.html": "/gerfabris/react-js-37735-fabris/index.html",
+    "main.1fb11736.css.map": "/gerfabris/react-js-37735-fabris/static/css/main.1fb11736.css.map",
+    "main.d9cab8e1.js.map": "/gerfabris/react-js-37735-fabris/static/js/main.d9cab8e1.js.map",
+    "787.b978bd17.chunk.js.map": "/gerfabris/react-js-37735-fabris/static/js/787.b978bd17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fb11736.css",
+    "static/js/main.d9cab8e1.js"
+  ]
+}
