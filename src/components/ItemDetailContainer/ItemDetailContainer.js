@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import {useParams} from 'react-router-dom';
 import Spinner  from "react-bootstrap/Spinner"
-import { pedirProductos } from "../../components/mock/pedirProductos"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../firebase/config"

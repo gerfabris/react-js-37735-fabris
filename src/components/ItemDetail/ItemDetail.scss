@@ -8,7 +8,7 @@
 }
 .itemDetail__containerRow{
     @include flex-row-wrap-center;
-    @include margin__Espaciado(2em,1em);
+    @include margin__Espaciado(1em,1em);
     justify-content: space-evenly;
     width: 100%;
 }
@@ -19,7 +19,7 @@
     padding: 1em;
 }
 .itemDetail__img{
-    @include margin__Espaciado(1em,1em);
+    @include margin__Espaciado(0em,1em);
     width: 80%;
 }
 .itemDetail__price{
@@ -27,10 +27,10 @@
     font-weight: bold;
 }
 .itemDetail__description{
-    @include margin__Espaciado(1em,1em);
+    @include margin__Espaciado(0em,1em);
 }
 .itemDetail__features{
-    @include margin__Espaciado(1em,1em);
+    @include margin__Espaciado(0em,1em);
 }
 .itemDetail__title{
     font-weight: bold;

@@ -3,7 +3,6 @@ import './style.css'
 import { AppRoutes } from './components/AppRoutes/AppRoutes';
 import { CartProvider } from './context/CartContext';
 
-
 function App() {
   return (
     <CartProvider>

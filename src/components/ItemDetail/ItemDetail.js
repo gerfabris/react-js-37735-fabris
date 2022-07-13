@@ -31,8 +31,8 @@ export const ItemDetail = ( {item} ) => {
                     <img src={item.pictureImg} alt="imagen producto" className='itemDetail__img' />
                 </div>
                 <div className='itemDetail__container'>
-                    <h3 className='itemDetail__description'>{item.description}</h3>
-                    <h4 className='itemDetail__features'>{item.features}</h4>
+                    <h4 className='itemDetail__description'>{item.description}</h4>
+                    <p className='itemDetail__features'>{item.features}</p>
                     <h5 className='itemDetail__price'>Precio: ${item.price}</h5>
                     {
                         isInCart(item.id)
